@@ -1,51 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Мой сайт</title>
-<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revo Coffee - Твой персональный кофе</title>
 </head>
 <body>
-<header>
-<div>
-<h1>МойСайт</h1>
-</div>
-<nav>
-<ul>
-<li><a href="#home">Главная</a></li>
-<li><a href="#about">О нас</a></li>
-<li><a href="#services">Услуги</a></li>
-<li><a href="#contact">Контакты</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<section id="home">
-<h2>Добро пожаловать!</h2>
-<p>Это главная страница нашего веб-приложения.</p>
-</section>
-<section id="about">
-<h2>О нас</h2>
-<p>Мы компания, которая занимается созданием качественных веб-решений.
-</p>
-</section>
-<section id="services">
-<h2>Наши услуги</h2>
-<ul>
-<li>Веб-разработка</li>
-<li>Дизайн</li>
-<li>Консультации</li>
-</ul>
-</section>
-<section id="contact">
-<h2>Контакты</h2>
-<p>Email: info@example.com</p>
-<p>Телефон: +7 (123) 456-78-90</p>
-</section>
-</main>
-<footer>
-<p>&copy; 2025 Сайт. Все права защищены.</p>
-</footer>
+    <header>
+        <a href="#">
+            <img src="assets/img/logo.png" alt="Логотип Revo" width="100">
+        </a>
+        
+        <p>YOUR PERSONALIZED COFFEE</p>
+
+        <nav>
+            <ul>
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#">КОФЕ</a></li>
+                <li><a href="#">ФИЛЬТРЫ</a></li>
+                <li><a href="#">КОМБО</a></li>
+                <li><a href="#">ПОДАРКИ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <img src="assets/img/banner.png" alt="Revo Coffee баннер">
+            <h1>Your Personalized Coffee</h1>
+            <p>COFFEE BUILD YOUR BASE</p>
+            <button>КУПИТЬ</button>
+        </section>
+
+        <section class="features">
+            <h2>Наши преимущества</h2>
+            
+            <article>
+                <img src="assets/icons/icon-source.png" alt="Источник">
+                <h3>Nguồn gốc</h3>
+                <p>Зерна Арабика и Робуста высшего качества по международным стандартам.</p>
+            </article>
+            
+            <article>
+                <img src="assets/icons/icon-quality.png" alt="Качество">
+                <h3>Chất lượng</h3>
+                <p>Каждое зерно отобрано вручную с максимальным вниманием к деталям.</p>
+            </article>
+
+            <article>
+                <img src="assets/icons/icon-beans.png" alt="Виды зерен">
+                <h3>Các loại hạt</h3>
+                <p>70% качества зависит от происхождения и качества зелёного зерна.</p>
+            </article>
+
+            <article>
+                <img src="assets/icons/icon-roast.png" alt="Обжарка">
+                <h3>Pha chế</h3>
+                <p>Зерна обжариваются и перемалываются по строгим технологиям.</p>
+            </article>
+        </section>
+
+        <section class="catalog">
+            <h2>Choose Your Favorite</h2>
+            <p>CHUAN GU DUNG VI</p>
+
+            <div class="product-list">
+                <article>
+                    <img src="assets/img/revo-morning.png" alt="Revo Morning">
+                    <p>99.000</p>
+                    <h3>REVO Morning</h3>
+                    <p>Đắng, hậu ngọt, hương hoa</p>
+                    <button>MUA NGAY</button>
+                    <button>CHI TIẾT</button>
+                </article>
+
+                <article>
+                    <img src="assets/img/revo-origin.png" alt="Revo Origin">
+                    <p>139.000</p>
+                    <h3>REVO Origin</h3>
+                    <p>Hậu ngọt, ít đắng, vị chua dâu</p>
+                    <button>MUA NGAY</button>
+                    <button>CHI TIẾT</button>
+                </article>
+
+                <article>
+                    <img src="assets/img/revo-everyday.png" alt="Revo Everyday">
+                    <p>85.000</p>
+                    <h3>REVO Everyday</h3>
+                    <p>Cân bằng, hậu đắng, vị chocolate</p>
+                    <button>MUA NGAY</button>
+                    <button>CHI TIẾT</button>
+                </article>
+
+                <article>
+                    <img src="assets/img/revo-damda.png" alt="Revo Dam Da">
+                    <p>75.000</p>
+                    <h3>REVO Đậm Đà</h3>
+                    <p>Đậm đà, đắng, truyền thống</p>
+                    <button>MUA NGAY</button>
+                    <button>CHI TIẾT</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="giftset">
+            <img src="assets/img/giftset.png" alt="Подарочный набор">
+            
+            <div class="gift-info">
+                <p>285.000</p>
+                <h2>Giftset "Cà phê phin Việt Nam"</h2>
+                <p>Отличный подарок для любителя кофе. Зёрна отбираются и обжариваются по традиционным рецептам с любовью и страстью.</p>
+                
+                <ul>
+                    <li>Тип зерна: Fine Robusta Blend</li>
+                    <li>Высота: 700-800м</li>
+                </ul>
+                
+                <button>MUA NGAY</button>
+                <button>CHI TIẾT</button>
+            </div>
+        </section>
+
+        <section class="combo">
+            <h2>COMBO PHIN PHÊ</h2>
+            
+            <article>
+                <img src="assets/img/combo-damda.png" alt="Combo Revo Đậm Đà">
+                <p>147.000 <s>155.000</s></p>
+                <h3>Combo Revo Đậm Đà</h3>
+                <p>Хватит кофеина, чтобы проснуться и работать весь день...</p>
+                <button>MUA NGAY</button>
+                <button>CHI TIẾT</button>
+            </article>
+
+            <article>
+                <img src="assets/img/combo-everyday.png" alt="Combo Revo Everyday">
+                <p>156.000 <s>165.000</s></p>
+                <h3>Combo Revo Everyday</h3>
+                <p>Смесь горечи Robusta и аромата высочайшего качества...</p>
+                <button>MUA NGAY</button>
+                <button>CHI TIẾT</button>
+            </article>
+
+            <article>
+                <img src="assets/img/combo-honey.png" alt="Combo Revo Honey">
+                <p>275.000 <s>260.000</s></p>
+                <h3>Combo Revo Honey</h3>
+                <p>Honey в названии — от способа обработки зёрен Arabica...</p>
+                <button>MUA NGAY</button>
+                <button>CHI TIẾT</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Revo Coffee Việt Nam - 2018</p>
+    </footer>
+
 </body>
 </html>
