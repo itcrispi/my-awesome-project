@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
@@ -13,6 +14,7 @@ body {
     background-color: #fff;
     line-height: 1.6;
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -60,6 +62,7 @@ body {
 .nav__link:active {
     transform: translateY(0);
 }
+
 .button {
     padding: 12px 24px;
     border: none;
@@ -104,6 +107,7 @@ body {
 .button--secondary:active {
     transform: scale(0.98);
 }
+
 .hero {
     text-align: center;
     padding: 60px 20px;
@@ -125,6 +129,7 @@ body {
     color: #666;
     margin-bottom: 20px;
 }
+
 .features {
     padding: 60px 40px;
     text-align: center;
@@ -135,8 +140,22 @@ body {
     margin-bottom: 40px;
 }
 
+.features__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
 .feature {
-    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .feature__icon {
@@ -153,9 +172,8 @@ body {
 .feature__text {
     font-size: 14px;
     color: #666;
-    max-width: 300px;
-    margin: 0 auto;
 }
+
 .catalog {
     padding: 60px 40px;
     text-align: center;
@@ -174,10 +192,10 @@ body {
 }
 
 .catalog__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    justify-content: center;
+    justify-items: center;
 }
 
 .product-card {
@@ -216,6 +234,7 @@ body {
     color: #666;
     margin-bottom: 15px;
 }
+
 .giftset {
     display: flex;
     align-items: center;
@@ -269,6 +288,7 @@ body {
     left: 0;
     color: #2c5530;
 }
+
 .combo {
     padding: 60px 40px;
     text-align: center;
@@ -279,14 +299,18 @@ body {
     margin-bottom: 40px;
 }
 
+.combo__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
 .combo-card {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 30px;
     max-width: 300px;
-    display: inline-block;
-    margin: 0 15px 30px;
     transition: all 0.3s ease;
 }
 
@@ -323,6 +347,7 @@ body {
     color: #666;
     margin-bottom: 15px;
 }
+
 .footer {
     background-color: #222;
     color: #fff;
@@ -332,4 +357,67 @@ body {
 
 .footer__text {
     font-size: 14px;
+}
+
+@media (max-width: 991px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .giftset {
+        flex-direction: column;
+    }
+    
+    .giftset__image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero__title {
+        font-size: 28px;
+    }
+    
+    .catalog__list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .features__container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    
+    .combo__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        padding: 15px 20px;
+    }
+    
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .hero__title {
+        font-size: 24px;
+    }
+    
+    .catalog__list,
+    .features__container {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-card,
+    .combo-card {
+        max-width: 100%;
+    }
+    
+    .button {
+        width: 100%;
+    }
 }
